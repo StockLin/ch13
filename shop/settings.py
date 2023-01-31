@@ -21,12 +21,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '=@+mvd9(!7vp=7ggcfanran67%+^4zusrqm9#71@lbym@pg(#_'
+SECRET_KEY = 'your-secret-key'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -203,9 +203,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # smtp 郵件伺服器設定
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'a6898208@gmail.com'
-EMAIL_HOST_PASSWORD = 'ieijlfkvgfkackwz'
+EMAIL_HOST = 'your mail host'
+EMAIL_HOST_USER = 'your mail host user'
+EMAIL_HOST_PASSWORD = 'your mail password'
 EMAIL_PORT = 587
 
 
@@ -215,9 +215,9 @@ OSCAR_FROM_EMAIL = 'service@shop.min-huang.com'
 OSCAR_DEFAULT_CURRENCY = 'TWD'
 
 
-PAYPAL_API_USERNAME = 'sb-cwu4723529022_api1.business.example.com'
-PAYPAL_API_PASSWORD = 'ME2JZAAA3EXPGGEN'
-PAYPAL_API_SIGNATURE = 'AxrZ7snszgPdmlSzDFHa1.XspUbXAUutugTPO8fbyGzVe2wLE.ThY8G7'
+PAYPAL_API_USERNAME = 'your paypal api username'
+PAYPAL_API_PASSWORD = 'your paypal api password'
+PAYPAL_API_SIGNATURE = 'your paypal api signature'
 
 PAYPAL_SANDBOX_MODE = True
 PAYPAL_CURRENCY = 'TWD'
